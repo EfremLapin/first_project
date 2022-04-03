@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Строительная компания</title>
+</head>
+
+<body>
+
+    <div class="modal hide">
+        <div class="modal__window">
+            <div class="modal__close">&#10006;</div>
+            <form action="POST" class="request__form">
+                <div class="modal__title text_title">Отправьте заявку</div>
+                <input type="text" class="modal__input" placeholder="Введите имя">
+                <input type="text" class="modal__input" placeholder="Введите номер">
+                <button class="modal__btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="menu hide">
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#proj" class="menu__link">Проекты</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">Деятельность</a></li>
+                        <li class="menu__item"><a href="#quest" class="menu__link">Ответы на вопросы</a></li>
+                        <li class="menu__item"><a href="#veiw" class="menu__link">Отзывы</a></li>
+                        <li class="menu__item"><a href="#cnts" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__hat">
+                <div class="header__logo"></div>
+                <div class="header__burger">
+                    <span class="header__burger_line"></span>
+                    <span class="header__burger_line"></span>
+                    <span class="header__burger_line"></span>
+                </div>
+            </div>
+            <div class="header__title">
+                <h1 class="header__title_main">Реализуем крупнейшие<br>проекты в России</h1>
+                <p class="header__title_sub">Стадионы, газопроводы, мосты, дамбы</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="numbers">
+        <div class="numbers__container container">
+            <div class="numbers__rectangle">
+                <div class="numbers__item">
+                    <h3 class="numbers__years">25</h3>
+                    <h3 class="numbers__text text_title">Лет</h3>
+                    <p class="numbers__subtext">На рынке</p>
+                </div>
+                <div class="numbers__item">
+                    <h3 class="numbers__years">45</h3>
+                    <h3 class="numbers__text text_title">Лет</h3>
+                    <p class="numbers__subtext">Гарантии</p>
+                </div>
+                <div class="numbers__item">
+                    <h3 class="numbers__years">21</h3>
+                    <h3 class="numbers__text text_title">Год</h3>
+                    <p class="numbers__subtext">Строим дамбы</p>
+                </div>
+                <div class="numbers__item">
+                    <h3 class="numbers__years">15</h3>
+                    <h3 class="numbers__text text_title">Лет</h3>
+                    <p class="numbers__subtext">Строим мосты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="proj">
+        <div class="project__conrainer container">
+            <h3 class="project__title text_title">Наши самые большие проекты</h3>
+            <ul class="project__list">
+                <li class="project__item">
+                    <div class="project__img_wrapper"><img src="img/projtemp.jpg" alt="template project" class="project__img"></div>
+                    <span class="project__decorline"></span>
+                    <h3 class="project__list_title text_subtitle">Газпром Арена</h3>
+                    <p class="project__descr text_parag">
+                        Мы сделали самую красивую арену в Европе.
+                        Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия.
+                        Мы очень рады данному еву.
+                    </p>
+                </li>
+                <li class="project__item">
+                    <div class="project__img_wrapper"><img src="img/projtemp.jpg" alt="template project" class="project__img"></div>
+                    <span class="project__decorline"></span>
+                    <h3 class="project__list_title text_subtitle">Газпром Арена</h3>
+                    <p class="project__descr text_parag">
+                        Мы сделали самую красивую арену в Европе.
+                        Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия.
+                        Мы очень рады данному еву.
+                    </p>
+                </li>
+                <li class="project__item">
+                    <div class="project__img_wrapper"><img src="img/projtemp.jpg" alt="template project" class="project__img"></div>
+                    <span class="project__decorline"></span>
+                    <h3 class="project__list_title text_subtitle">Газпром Арена</h3>
+                    <p class="project__descr text_parag">
+                        Мы сделали самую красивую арену в Европе.
+                        Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия.
+                        Мы очень рады данному еву.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="request">
+        <div class="request__container container">
+            <div class="request__text">
+                <h2 class="request__title">Самые умные проекты</h2>
+                <h3 class="request__subtitle text_subtitle">Реализуем самые смелые решения в России!</h3>
+            </div>
+            <button class="request__btn">
+                <div class="request__mail">
+                    <svg width="21" height="18" viewBox="0 0 18 15" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 4.70312C17.6987 5.0346 17.3571 5.32589 16.9955 5.57701C15.3181 6.71205 13.6306 7.85714 11.9933 9.04241C11.1496 9.66518 10.1049 10.4286 9.01005 10.4286H9H8.98996C7.89509 10.4286 6.85045 9.66518 6.0067 9.04241C4.36942 7.8471 2.68192 6.71205 1.01451 5.57701C0.642857 5.32589 0.301339 5.0346 0 4.70312V12.6786C0 13.5625 0.723214 14.2857 1.60714 14.2857H16.3929C17.2768 14.2857 18 13.5625 18 12.6786V4.70312ZM18 1.75C18 0.866071 17.2667 0.142857 16.3929 0.142857H1.60714C0.532366 0.142857 0 0.986607 0 1.97098C0 2.88504 1.01451 4.02009 1.72768 4.50223C3.2846 5.58705 4.86161 6.67187 6.41853 7.76674C7.07143 8.21875 8.17634 9.14286 8.98996 9.14286H9H9.01005C9.82366 9.14286 10.9286 8.21875 11.5815 7.76674C13.1384 6.67187 14.7154 5.58705 16.2824 4.50223C17.1663 3.88951 18 2.875 18 1.75Z" fill="black"/>
+                    </svg>
+                </div>Ваш запрос
+            </button>
+        </div>
+    </section>
+
+    <section class="services" id="about">
+        <div class="services__container container">
+            <h2 class="services__title text_title">Чем мы занимаемся?</h2>
+            <ul class="services__list">
+                <li class="services__item">
+                    <div class="services__icon">
+                        <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z" fill="#F7654A" />
+                        </svg>
+                    </div>
+                    <h4 class="services__item_title">Строительство<br>офисных зданий</h4>
+                </li>
+                <li class="services__item">
+                    <div class="services__icon">
+                        <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
+                                fill="#F7654A" />
+                        </svg>
+                    </div>
+                    <h4 class="services__item_title">Строительство<br>офисных зданий</h4>
+                </li>
+                <li class="services__item">
+                    <div class="services__icon">
+                        <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
+                                fill="#F7654A" />
+                        </svg>
+                    </div>
+                    <h4 class="services__item_title">Строительство<br>офисных зданий</h4>
+                </li>
+                <li class="services__item">
+                    <div class="services__icon">
+                        <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
+                                fill="#F7654A" />
+                        </svg>
+                    </div>
+                    <h4 class="services__item_title">Строительство<br>офисных зданий</h4>
+                </li>
+                <li class="services__item">
+                    <div class="services__icon">
+                        <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
+                                fill="#F7654A" />
+                        </svg>
+                    </div>
+                    <h4 class="services__item_title">Строительство<br>офисных зданий</h4>
+                </li>
+                <li class="services__item">
+                    <div class="services__icon">
+                        <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
+                                fill="#F7654A" />
+                        </svg>
+                    </div>
+                    <h4 class="services__item_title">Строительство<br>офисных зданий</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio" id="port">
+        <div class="portfolio__container">
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+            <div class="portfolio__img_wrapper"><img src="img/portfolio.jpg" alt="portfolio image" class="portfolio__img"></div>
+        </div>
+    </section>
+
+    <section class="questions" id="quest">
+        <div class="questions__conrainer container">
+            <h3 class="questions__title text_title">Ответы на вопросы</h3>
+            <div class="questions__wrapper">
+                <details class="questions__details">
+                    <summary class="questions__question text_subtitle">Работаете ли вы по 249 ФЗ?</summary>
+                    <p class="questions__answer text_parag">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                        используя Lorem Ipsum для распечатки образцов.
+                    </p>
+                </details>
+                <details class="questions__details">
+                    <summary class="questions__question text_subtitle">Работаете ли вы по 249 ФЗ?</summary>
+                    <p class="questions__answer text_parag">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                        используя Lorem Ipsum для распечатки образцов.
+                    </p>
+                </details>
+                <details class="questions__details">
+                    <summary class="questions__question text_subtitle">Работаете ли вы по 249 ФЗ?</summary>
+                    <p class="questions__answer text_parag">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                        используя Lorem Ipsum для распечатки образцов.
+                    </p>
+                </details>
+                <details class="questions__details">
+                    <summary class="questions__question text_subtitle">Работаете ли вы по 249 ФЗ?</summary>
+                    <p class="questions__answer text_parag">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                        используя Lorem Ipsum для распечатки образцов.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="partners__container container">
+            <h3 class="partners__title text_title"> Наши партнеры</h3>
+            <div class="partners__img_block">
+                <img src="img/partners.png" alt="partners" class="partners__img">
+                <img src="img/partners.png" alt="partners" class="partners__img">
+                <img src="img/partners.png" alt="partners" class="partners__img">
+                <img src="img/partners.png" alt="partners" class="partners__img">
+                <img src="img/partners.png" alt="partners" class="partners__img">
+                <img src="img/partners.png" alt="partners" class="partners__img">
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="veiw">
+        <div class="reviews__container container">
+            <h3 class="reviews__title text_title">Отзывы о работе с нами</h3>
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <figure class="reviews__block">
+                        <blockquote class="reviews__blockquote">
+                            <div class="reviews__ticks"></div>
+                            <p class="reviews__quote text_parag">Lorem Ipsum - это текст-"рыба", часто используемый в
+                                печати и вэб-дизайне.
+                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                                В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </p>
+                        </blockquote>
+                        <figcaption class="reviews__author">Иван Иванов, <cite class="reviews__company">ООО "Газпром Арена"</cite></figcaption>
+                    </figure>
+                </li>
+                <li class="reviews__item">
+                    <figure class="reviews__block">
+                        <blockquote class="reviews__blockquote">
+                            <div class="reviews__ticks"></div>
+                            <p class="reviews__quote text_parag">Lorem Ipsum - это текст-"рыба", часто используемый в
+                                печати и вэб-дизайне.
+                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                                В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </p>
+                        </blockquote>
+                        <figcaption class="reviews__author">Иван Иванов, <cite class="reviews__company">ООО "Газпром Арена"</cite></figcaption>
+                    </figure>
+                </li>
+                <li class="reviews__item">
+                    <figure class="reviews__block">
+                        <blockquote class="reviews__blockquote">
+                            <div class="reviews__ticks"></div>
+                            <p class="reviews__quote text_parag">Lorem Ipsum - это текст-"рыба", часто используемый в
+                                печати и вэб-дизайне.
+                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                                В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </p>
+                        </blockquote>
+                        <figcaption class="reviews__author">Иван Иванов, <cite class="reviews__company">ООО "Газпром Арена"</cite></figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="request">
+        <div class="request__container container">
+            <div class="request__text">
+                <h2 class="request__title">Хотите с нами работать?</h2>
+                <h3 class="request__subtitle text_subtitle">Оставьте заявку и мы свяжемся с вами!</h3>
+            </div>
+            <button class="request__btn">
+                <div class="request__mail">
+                    <svg width="21" height="18" viewBox="0 0 18 15" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 4.70312C17.6987 5.0346 17.3571 5.32589 16.9955 5.57701C15.3181 6.71205 13.6306 7.85714 11.9933 9.04241C11.1496 9.66518 10.1049 10.4286 9.01005 10.4286H9H8.98996C7.89509 10.4286 6.85045 9.66518 6.0067 9.04241C4.36942 7.8471 2.68192 6.71205 1.01451 5.57701C0.642857 5.32589 0.301339 5.0346 0 4.70312V12.6786C0 13.5625 0.723214 14.2857 1.60714 14.2857H16.3929C17.2768 14.2857 18 13.5625 18 12.6786V4.70312ZM18 1.75C18 0.866071 17.2667 0.142857 16.3929 0.142857H1.60714C0.532366 0.142857 0 0.986607 0 1.97098C0 2.88504 1.01451 4.02009 1.72768 4.50223C3.2846 5.58705 4.86161 6.67187 6.41853 7.76674C7.07143 8.21875 8.17634 9.14286 8.98996 9.14286H9H9.01005C9.82366 9.14286 10.9286 8.21875 11.5815 7.76674C13.1384 6.67187 14.7154 5.58705 16.2824 4.50223C17.1663 3.88951 18 2.875 18 1.75Z" fill="black"/>
+                    </svg>
+                </div>
+                Ваш запрос
+            </button>
+        </div>
+    </section>
+
+    <section class="contacts" id="cnts">
+        <div class="contacts__container container">
+            <h3 class="contacts__title text_title">Контакты</h3>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <div class="contacts__icon address_marker"></div>
+                    <h3 class="contacts__subtitle text_subtitle">Адрес:</h3>
+                    <address class="contacts__address text_subtitle">НЕВСКИЙ ПРОСПЕКТ 140,<br>ОФИС 140-142</address>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__icon phone_marker"></div>
+                    <h3 class="contacts__subtitle text_subtitle">Телефон:</h3>
+                    <address class="contacts__address text_subtitle">
+                        <a href="tel:88121112233" class="contacts__tel">8 (812) 111-22-33</a>
+                        <a href="tel:88121112233" class="contacts__tel">8 (812) 111-22-33</a>
+                    </address>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__icon time_marker"></div>
+                    <h3 class="contacts__subtitle text_subtitle">Время работы:</h3>
+                    <address class="contacts__address text_subtitle">ПН-СБ<br>10:00 - 20:00</address>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__icon mail_marker"></div>
+                    <h3 class="contacts__subtitle text_subtitle">E-Mail:</h3>
+                    <address class="contacts__address text_subtitle"><a href="mailto:info@vip.ru"
+                            class="contacts__email">INFO@VIP.RU</a></address>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copyrigth text_parag">© 2019 Строительная компания</p>
+            <p class="footer__text text_parag">Разработано лучшей студией</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
